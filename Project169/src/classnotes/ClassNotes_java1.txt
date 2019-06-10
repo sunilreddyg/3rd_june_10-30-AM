@@ -1,0 +1,201 @@
+Create package in Eclipse:-->
+
+	* Under project right click on src 
+	* use New option select --> package. 
+	* Enter packagename and name should  [starts with lowercase]
+
+	* Make sure package name is unique.
+
+============================================================
+
+Class:--->
+
+	* Class is a blureprint or template
+	* Class contain set of methods and events[variable]
+	* Class is a category,under category we can find set of behaviours.
+
+Syntax:-->
+
+	class <classname>		class  Smartphone		public  class SmartPhone
+	{			{			{
+
+	}			}			}
+
+
+
+
+Create Class in Eclipse:-->
+
+		Right click on package----->New ---------->Class
+		Enter classname click on Finish.
+
+		Note:--> Classname start with uppercase.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+method:--->
+	method describe class behaviour
+	Each class contain one or set of methods
+	Each method contain one or set of statements
+	
+Syntax:--->
+
+	public  class SmartPhone	
+	{
+		void calling( )
+		{
+		
+		}
+
+		void sendText()
+		{
+
+		}
+
+	}
+
+
+	Note:-->
+	void  ---->Method type , void does't return any value to method
+
+
+------------------------------------------------------------------------------------------------>
+Statement:-->
+	every method allow set of statements
+	In java programming each statement should end with  <<  ;  >>
+
+Syntax:-->
+	public  class SmartPhone	
+	{
+		void sendText( )
+		{
+			System.out.println("Add text");
+
+		}
+
+	}
+--------------------------------------------------------------------------------------------------------------
+mainmethod:-->
+	* In java programing execution starts from main method
+	* Under main method we  can write statement directly or
+		can call statement using object creation...
+
+Syntax:-->
+
+	public  class AppTest
+	{
+		public static  void main(String args[])
+		{
+			System.out.println("hello world!");
+		}
+
+	}
+
+
+Navigation to  create Main method in Eclipse:---->
+
+	Under Package  ---->  New  ----> class  -----> Enter classname
+	select checkbox   <<<   public static void main >>
+	click on finish.
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------>>
+object:-->
+	In real world every object have independent states. and each state
+	have independent behaviour.
+
+	In java program we need to create object to access any class behaviour.
+	Syntax:-->
+			Classname   variable=new  Classname();
+			variable.methodname();
+
+	Syntax to call static methods from public class:-->
+
+			Classname.methodname();
+			Classname.variablename;
+-----------------------------------------------------------------------------------------------------------------------------
+When to write import package for any class:---->
+
+	Whenever need to reuse Class,method or variable from
+	different package , Import is Mandatory
+
+	=> Define method with public modifier to access outside package.
+Syntax:-->
+	import packagename.classname;
+		or
+	import packagename.*;
+
+	write import statement after packagename
+
+-----------------------------------------------------------------------------------------------------------------------
+Basic WebDriver code to launch Firefoxbrowser:--->
+
+
+
+
+package org.hdfc.webdriver;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+public class WebDriver_Basic {
+
+	public static void main(String[] args) 
+	{
+		
+		/*
+		 * WebDriver is a interface class it can manipulate
+		 * all browser supported by selenium-webdriver.
+		 */
+		
+		WebDriver wd=new FirefoxDriver();
+		wd.get("http://google.com");
+		wd.manage().window().maximize();
+					
+	}
+
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+	Selenium Version :-->    2
+	Browser version   :-->    42-50    [45]
+
+	Note:--> In Selenium 2 firefox is default browser. to launch firefox no need of
+		any aditional configurations.
+
+		Other than firefox all browser need diff browser configurations to launch.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+	Selenium version :--->   3
+	browser version   :--->   above 50 versions.
+
+
+
+	Note:--> In selenium 3 all browsers need diff configuration to launch browser.
+		
+------------------------------------------------------------------------------------------------------------------------------------------		
+	How to stop updation on firefox browser....?
+
+
+			Open firefox ---->tools ---> options
+			---> In options page select advanced tab
+			---> In Advanced page select update tab
+			---> Select radio button never check for updates.
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+

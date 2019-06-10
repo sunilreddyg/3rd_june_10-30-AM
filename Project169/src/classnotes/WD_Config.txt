@@ -1,0 +1,113 @@
+webdriver download's:-------->
+
+		1. JDK 1.8   [Java development kit]
+		2. Eclipse-IDE [Java development Version]
+		3. WebDriver libraries    [Java language]
+
+
+Note:--> Before JDK and Eclipse download please find system hotspot size 
+	[32 or 64 bit].
+
+Download JDK 1.8 :-->
+
+	=>Before download java Create account for oracle..
+		URL:--> https://profile.oracle.com/myprofile/account/create-account.jspx?
+		             Enter details click on  Create account..
+
+	=> Google:-->   Java SE Development Kit 8 - Downloads - Oracle
+	=> URL:--> https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+	=> Under development kit << accept license agreement >> radio button.
+	=> click on .exe file for windows w.r.t  hotspot size 
+	=> Enter oracle signin details to download .exe
+	=> Save file into backup drive.
+	=> it is executable jar file use double click to start installation.
+	=> Follow installation process until receive close button.
+
+Confirm java availability in pc:-->
+
+	=> open command prompt
+	=> Enter keyword :-->    java -version
+
+Setup environment path:--> [windows 10 OS]
+
+	                  ---> Right click on This PC --> Select properties
+		---> click on <<advanced system settings>>
+		---> click on <<Envirionment variable>> button
+		---> under System variable  select "path" and click edit  button
+		---> Click new button
+		---> copy bin location of JDK path
+		---> click ok button
+	
+		path :-->C:\Program Files\Java\jdk1.8.0_65\bin
+
+====================================================================
+Eclipse:-->   Opensource editor it supports many platform.
+	
+	Google:-->  Mars 2 | Eclipse Packages
+	URL     :-->  http://www.eclipse.org/downloads/packages/release/mars/2
+	           
+	=> Download eclipse  ---> Eclipse IDE for Java Developers
+	=> Choose operating system and hotspot size.
+	=> Download zip format file 
+	=> After download unzip file to backup drive.
+	=> After unzip we receive eclipse folder and folder contains 
+			eclipse Application ICON.
+====================================================================
+Download Selenium-webdriver:--->
+
+	URL:--> https://www.seleniumhq.org/
+	=> click on download tab
+	=> Under Selenium Client & WebDriver Language Bindings
+	=> choose language [java] and click on download button.
+	=> System ask zip format file to download.
+	=> Save file into backup drive.
+	
+=====================================================================  
+Create Workspace:-->
+	=> Workspace store your projects..
+	=> Create Empty folder at any drive and name it as <<Selenium-Workspace>>
+	=> Create sub folder and name it as <<library >>
+	=> Dump all selenium supported libraries into library folder..
+=====================================================================
+
+Launch eclipse using above workspace:-->
+		
+		=> double click on eclipse ICON
+		=> browse workspace click on ok button.
+====================================================================
+Create java project in eclipse:-->
+	
+	=> Open Eclipse  choose file menu --->New option ---> Select projects
+	--> Open java folder  --> Select java project and click next button
+	--> Enter project name and click on finish.
+
+
+Configure JRE libraries for [Java 10+]
+
+	=> Select Project
+	=> Select eclipse menu --> Project --->Select Properties
+	=> Select Java buildpath under properties window
+	=> Select libraries tab
+	=> click Add library button
+	=> Select JRE system library and click Next button
+	=> select tag alternate environment
+	=> Click Finish 
+
+====================================================================
+Configure webdriver jar files to java project:-->
+
+	Under project --> Right click on JRE system libraries --> use build
+	path and configure build path ---> Click Add External jars button
+	--> Browser all selenium libraries....
+===================================================================
+
+
+
+
+
+
+
+
+
+
+
