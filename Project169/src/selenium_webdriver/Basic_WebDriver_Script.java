@@ -22,8 +22,7 @@ public class Basic_WebDriver_Script
      * 		=> Single interface class helps to conduct cross browser automation.
      */
     
-    
-
+   
     //Launch Chrome browser instance
     WebDriver driver= new ChromeDriver();
     //Load webpage to chrome automation browser.
