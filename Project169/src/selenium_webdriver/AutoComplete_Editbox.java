@@ -27,8 +27,6 @@ public class AutoComplete_Editbox
 		driver.findElement(By.id("FromTag")).sendKeys("H"+Keys.ARROW_RIGHT+"YD");
 
 		
-		
-		
 		Thread.sleep(4000); //Timeout to load suggestions.
 		driver.findElement(By.linkText("Hyderabad, IN - Rajiv Gandhi International (HYD)")).click();
 		
