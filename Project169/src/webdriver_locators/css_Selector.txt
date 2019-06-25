@@ -154,13 +154,10 @@ HtmlSource:-->
 		<input id="9ju7yg876"  type="text">  ---->Target Element
 	</div>	
 
-
-
 	Syntax:-->
 		parentnode  > childnode...
 
 		By.cssSelector("div[id='login_conainer'] >  input[type='text']")
-
 ====================================================================
 HtmlSource:-->
 	
@@ -175,3 +172,25 @@ Syntax:-->
 		parentnode  <space> childnode...
 
 		By.cssSelector("div[id='login_conainer']  input")
+=====================================================================
+Example:-->  Target Element with Sibling Node.
+
+HtmlSource:-->
+	
+	<div  class="demo">
+		<div id="Search_btn"></div>
+		<span> Flight Search </span>  -----> Target Location
+	</div>	
+
+syntax:-->
+	By.cssSelector("div[id='Search_btn']+span")
+=====================================================================
+	
+	
+	
+	
+	
+	
+	
+	
+	
