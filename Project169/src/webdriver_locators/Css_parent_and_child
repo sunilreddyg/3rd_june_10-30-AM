@@ -18,7 +18,7 @@ Recognize object when parent element having single child element
 Syntax:-->
 	parenttagname[property='pvalue'] > childtagname
 
-	
+	By.CssSelector("div[id='reg_login'] > input")
 
 ==============================================================================
 Example2:-->
@@ -41,7 +41,7 @@ Recognize object when parent element having Group child element
 Syntax:-->
 	parenttagname[property='pvalue'] > childtagname[prop='pvalue']
 
-
+	By.CssSelector("div[id='reg_login'] > input[type='text']")
 ----------------------------------------------------------------------	
 Example3:-->
 Recognize object when parent-element having duplicate child-elements
@@ -66,7 +66,7 @@ Cssposition:--->
 			
 		Relative syntax with position:--->
 				
-				
+		By.CssSelector("div[id='reg_login'] > input:nth-child(2)")		
 				
 ------------------------------------------------------------->>
 Example:-->
@@ -82,17 +82,55 @@ Example:-->
 Css Position syntax:-->
 			
 				tagname:nth-child(int pos)
-			
+				
+				By.CssSelector("select[id='ClassType'] > option:nth-child(2)")		
+				
 ------------------------------------------------------------------->>
+Example:-->
+Recognize object with sibling node..
+------------->Html Source--------->   
+
+<html>
+<body>
+		<div id="reg_login"  class="form">
+			<input id="sample" class="abc"></input> ------>>>>Source
+			<input id="email" type="text"></input>  ------>>>>TargetElement	
+		</div>
+</body>
+</html>	
+	
+	Syntax:-->
+	
+			By.CssSelector("input[id='sample']+input")		
+=======================================================================
+Example:-->
+Recognize object with sibling node..
+------------->Html Source--------->   
+
+<html>
+<body>
+		<div id="reg_login"  class="form">
+			<input id="sample" class="abc"></input> ------>>>>Unique sibling
+			<input id="email" type="text"></input>
+			<input id="email" type="text"></input>  ------>>>>TargetElement	
+		</div>
+</body>
+</html>	
+	
+	Syntax:-->
+	
+			By.CssSelector("input[id='sample']+input+input")			
+	
+==========================================================================
+
+Free plugins for chrome browser to auto genarate cssSelector:-->
+	
 	Download Element Locator -WebStore..
 	click "AddtoChrome" button
 	click on "Addextension" Button.
 	
 	After plugin installation you can find plugin in Browser tool Bar.
-================================================================
-CssSelector:--> page
-=> https://www.w3schools.com/cssref/css_selectors.asp	
-	
+
 	
 	
 	
