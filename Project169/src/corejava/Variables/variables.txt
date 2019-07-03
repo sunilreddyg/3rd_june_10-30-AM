@@ -162,7 +162,7 @@ Instant Variable:---->
 
 		public Hotmailhomepage
 		{
-			public WebDriver driver=null;
+			   public WebDriver driver=null;
 
 				public void launchApplication()
 				{
