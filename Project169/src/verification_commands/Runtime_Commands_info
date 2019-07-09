@@ -96,7 +96,6 @@ getAttribute("propertyname");
 	
 			Method capture runtime attribute value using attributename.
 				  
-				  
 				Syntax:-->  
 				  	WebElement Element=driver.findElement(By.id("x"));
 				  	String value=Element.getAttribute("attributename");
