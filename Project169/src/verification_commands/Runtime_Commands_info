@@ -118,62 +118,60 @@ getCssvalue:-->
 						font-size
 						color
 						background-color
-						alignment
-									
-				Syntax:-->
+						text-align				
+		Syntax:-->
 				
-					//Identify Element
-					WebElement Element=driver.findElement(By.id("x"));
-					
-					String text_font_size=Element.getCssvalue("font-size");	
-					System.out.println(text_font_size);
-===================================================getTagname:-->
+			//Identify Element
+			WebElement Element=driver.findElement(By.id("x"));
+			String text_font_size=Element.getCssvalue("font-size");	
+			System.out.println(text_font_size);
+=========================================================
 getTagname():-->>
 	
 			Method return selected element tagname at runtime.		
 			
 			Syntax:-->
-							String Runtime_Tagname=driver.findElement(By.id("x")).gettagname();
-							System.out.println(Runtime_Tagname);
+			String Runtime_Tagname=driver.findElement(By.id("x")).gettagname();
+			System.out.println(Runtime_Tagname);
 =====================================================>>
 getLocation:--->
-				Method capture selected element location at webpage
-				and return x and y coordinates of object
-				
-				Note:--> getLocation return type is point. Point return
-						 object x and y coordinates.
-	
-				Syntax:-->
-				
-					//Identify Element
-					WebElement Element=driver.findElement(By.id("x"));
-					
-					Point Obj_point=Element.getLocation();
+		Method capture selected element location at webpage
+		and return x and y coordinates of object
 		
-					//using object point get x and y coordinates
-					int obj_x=Obj_point.getX();
-					System.out.println("Object x coordinates  "+obj_x);
-					
-					int obj_y=Obj_point.getY();
-					System.out.println("Object y coordinates  "+obj_y);
+		Note:--> getLocation return type is point. Point return
+				 object x and y coordinates.
+
+		Syntax:-->
+		
+			//Identify Element
+			WebElement Element=driver.findElement(By.id("x"));
+			
+			Point Obj_point=Element.getLocation();
+
+			//using object point get x and y coordinates
+			int obj_x=Obj_point.getX();
+			System.out.println("Object x coordinates  "+obj_x);
+			
+			int obj_y=Obj_point.getY();
+			System.out.println("Object y coordinates  "+obj_y);
 ================================================================================
 getsize:-->
-				Method capture selected element dimension at webpage
-				and dimesnion return height and width of object.
-			
-				Syntax:-->
-				
-					//Identify Element
-					WebElement Element=driver.findElement(By.id("x"));
-					
-					Dimension Obj_dimension=Element.getSize();
+			Method capture selected element dimension at webpage
+			and dimesnion return height and width of object.
 		
-					//using object dimension get object height and width
-					int obj_height=Obj_dimension.getheight();
-					System.out.println("Object height is "+obj_height);
-					
-					int obj_width=Obj_dimension.getWidth();
-					System.out.println("Object width is "+obj_width);
+			Syntax:-->
+				
+			//Identify Element
+			WebElement Element=driver.findElement(By.id("x"));
+			
+			Dimension Obj_dimension=Element.getSize();
+
+			//using object dimension get object height and width
+			int obj_height=Obj_dimension.getheight();
+			System.out.println("Object height is "+obj_height);
+			
+			int obj_width=Obj_dimension.getWidth();
+			System.out.println("Object width is "+obj_width);
 ==========================================================================>
 					
 					
