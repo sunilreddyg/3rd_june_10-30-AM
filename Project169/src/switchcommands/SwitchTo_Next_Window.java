@@ -51,7 +51,6 @@ public class SwitchTo_Next_Window {
 		//Close Sub window
 		driver.close();
 		
-		
 		//Switch to main window
 		driver.switchTo().window(MainWindow_ID);
 		System.out.println("Focus available at window  => "+driver.getTitle());
