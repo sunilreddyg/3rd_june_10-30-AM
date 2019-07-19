@@ -1,4 +1,4 @@
-package mouse_and_keyboard_interactions;
+package mouse_interactions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

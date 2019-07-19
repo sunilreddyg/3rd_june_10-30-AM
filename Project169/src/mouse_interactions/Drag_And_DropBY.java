@@ -1,4 +1,4 @@
-package mouse_and_keyboard_interactions;
+package mouse_interactions;
 
 import java.util.concurrent.TimeUnit;
 
@@ -24,8 +24,7 @@ public class Drag_And_DropBY {
 		
 		//Target Element
 		WebElement Price_Slider=driver.findElement(By.xpath("/html/body/div[10]/div[9]/div[1]/div/div[1]/div[2]/div[2]/div[3]/div/div[1]/a[1]"));
-		
-		
+	
 		/*
 		 * Note:-->
 		 * 		Enable mouse and keybord interaction on automation
