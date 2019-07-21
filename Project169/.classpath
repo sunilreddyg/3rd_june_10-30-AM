@@ -9,5 +9,10 @@
 	<classpathentry kind="lib" path="D:/sunill/3rd_June_10-30_AM_2019/selenium-libraries/libs/guava-25.0-jre.jar"/>
 	<classpathentry kind="lib" path="D:/sunill/3rd_June_10-30_AM_2019/selenium-libraries/libs/okhttp-3.11.0.jar"/>
 	<classpathentry kind="lib" path="D:/sunill/3rd_June_10-30_AM_2019/selenium-libraries/libs/okio-1.14.0.jar"/>
+	<classpathentry kind="lib" path="D:/sunill/3rd_June_10-30_AM_2019/selenium-libraries/commons-io-2.6/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="D:/sunill/3rd_June_10-30_AM_2019/selenium-libraries/commons-io-2.6/commons-io-2.6-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/sunill/3rd_June_10-30_AM_2019/selenium-libraries/commons-io-2.6/commons-io-2.6-sources.jar"/>
+	<classpathentry kind="lib" path="D:/sunill/3rd_June_10-30_AM_2019/selenium-libraries/commons-io-2.6/commons-io-2.6-tests.jar"/>
+	<classpathentry kind="lib" path="D:/sunill/3rd_June_10-30_AM_2019/selenium-libraries/commons-io-2.6/commons-io-2.6-test-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
