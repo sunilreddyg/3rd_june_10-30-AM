@@ -50,7 +50,6 @@ Implicitwait:-->
 		//Set timeout until asynchronized source to load.
 		driver.manage().timeouts().setScriptTimeout(50,Timeunit.Seconds);
 
-		
 ----------------------------------------------------------------------------------->
 ExplicitWait:-->
 	* Explicitwait manage timegap w.r.t application.
@@ -98,7 +97,7 @@ titleIs:--->
 		
 		titleIs command without Webdriverwait:----->
 		
-			boolean flag=ExpectedConditions.titleIs("Exp_title").apply(driver).booleanValue();
+			boolean flag=ExpectedConditions.titleIs("Exp_title").apply(driver);
 			System.out.println("Expected title available status "+flag)
 
 		titleIs command with Webdriverwait:----->
@@ -113,7 +112,7 @@ titleContains:-->
 				
 		titleContains command without Webdriverwait:----->
 		
-			boolean flag=ExpectedConditions.titleContains("Exp_parial_title").apply(driver).booleanValue();
+			boolean flag=ExpectedConditions.titleContains("Exp_parial_title").apply(driver);
 			System.out.println("Expected title available status "+flag)
 
 		titleContains command with Webdriverwait:----->
@@ -149,7 +148,6 @@ urlcontains:--->
 			WebdriverWait  wait=new WebDriverwait(driver,100);
 			wait.until(ExpectedConditions.urlcontains("Expectdurl_or_partial"));
 			
-
 visibilityOfElementLocated:-->
 
 		An expectation to verify expected element visible at webpage	
@@ -158,17 +156,18 @@ visibilityOfElementLocated:-->
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("x")));
 	
 textToBePresentInElementLocated:--->
-		An expectation to verify text presented at selected Element..
+	An expectation to verify text presented at selected Element..
 		
-		WebdriverWait  wait=new WebDriverwait(driver,100);
-		wait.until(ExpectedConditions.textToBePresentInElementLocated(By.id("x"),"Expected Text"));
-				
-				
+	WebdriverWait  wait=new WebDriverwait(driver,100);
+	wait.until(ExpectedConditions.textToBePresentInElementLocated
+						(By.id("x"),"Expected Text"));
+							
 textToBePresentInElementValue:--->
-		An expecation to verify expected input presented at editbox...
+	An expecation to verify expected input presented at editbox...
 
-		WebdriverWait  wait=new WebDriverwait(driver,100);
-		wait.until(ExpectedConditions.textToBePresentInElementValue(By.id("x"),"inputvalue"));
+	WebdriverWait  wait=new WebDriverwait(driver,100);
+	wait.until(ExpectedConditions.textToBePresentInElementValue
+					(By.id("x"),"inputvalue"));
 				
 	
 attributeContains:-->
