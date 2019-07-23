@@ -177,8 +177,26 @@ attributeContains:-->
 		wait.until(ExpectedConditions.attributeContains(By.id("x"),"attributename","attributevalue"));
 				
 	
+Alertpresented:-->
+	  An expectatino to verify alert presented at webpage.
+	  
+	  WebdriverWait  wait=new WebDriverwait(driver,100);
+	  wait.until(ExpectedConditions.Alertpresented()).accept();	
+			
+			
+frametobeavailableAndSwitchToIt:-->
+	An expecation to verify expected frame loaded at webpage.
 	
+	WebdriverWait  wait=new WebDriverwait(driver,100);
+	wait.until(ExpectedConditions.FrameTobeAvailableAndSwitchtoIt(By FrameLocator));
+				
+NumberofWindowsTobe:-->
 	
+	WebdriverWait  wait=new WebDriverwait(driver,100);
+	wait.until(ExpectedConditions.NumberofWindowsTobe(int num));
+				
+			
+			
 			
 			
 
