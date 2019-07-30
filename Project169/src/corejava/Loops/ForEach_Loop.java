@@ -18,12 +18,12 @@ public class ForEach_Loop
 		
 		
 		/*
-		 * Example:--> Print array next value using index value
+		 * Example:--> Print array next value using foreach loop.
 		 */
 		String tools[]={"IDE","RC","WD","GRID"};
-		for (String eachtool : tools)
+		for (String Eachtool : tools) 
 		{
-			System.out.println(eachtool);
+			System.out.println("=> "+Eachtool);
 		}
 		
 		

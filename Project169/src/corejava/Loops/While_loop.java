@@ -13,7 +13,15 @@ public class While_loop {
 		/*
 		 * While:-->  Is a condition based loop it accept iteration when condition
 		 * 			  return true and stop iteration when condition return false.
+		 * 	
+		 * 		Note:--> While get into infinity loop incase condition was not
+		 * 				 return false.
 		 * 
+		 * 			Syntax:-->
+		 * 					while(condition)
+		 * 					{
+		 * 
+		 * 					}
 		 */
 		
 		
@@ -32,25 +40,30 @@ public class While_loop {
 		
 		
 		/*
-		 * Example:--> Using while loop wait until element displayed at webpage
+		 * Example:--> Using while loop manage timeout until required element
+		 * 				 visible at webpage.
 		 */
+		
+		//Set Runtime environment variable for chrome driver
+		String chrome_path="D:\\sunill\\3rd_June_10-30_AM_2019\\drivers\\chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", chrome_path);
 		WebDriver driver=new ChromeDriver();
 		driver.get("http://facebook.com");
 		driver.manage().window().maximize();
-		
-		
+	
 		//Identify Retype email
-		WebElement Retype_email=driver.findElement(By.xpath("//input[contains(@id,'u_0_r')]"));
+		WebElement Retype_email=driver.findElement(By.xpath("//input[@name='reg_email_confirmation__']"));
 		
 		int j=0;
 		//Accept loop on condition true
-		while(!Retype_email.isDisplayed())
+		while(!Retype_email.isDisplayed())  //!--NOT
 		{
 			j=j+1;
 			Thread.sleep(1000);
+
 			if(j==30)
 			{
-				throw new Exception("Timeout completed element not visible at webpage");
+				throw new Exception("Element is not visible at webpage,Timeout finished 30 seconds");
 			}
 		}
 		

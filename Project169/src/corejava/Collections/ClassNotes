@@ -1,0 +1,10 @@
+Collection : Root interface with basic methods like add(), remove(), 
+             contains(), isEmpty(), addAll(), ... etc.
+ 
+Set : Doesn't allow duplicates and elements are not-order. 
+List : Can contain duplicates and elements are ordered. 
+Map : Contains Key value pairs. Doesn't allow duplicates.  
+     
+The difference between Set and Map interface is that in Set we 
+have only keys, whereas in Map, we have key, value pairs.
+
