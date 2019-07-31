@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
+
 public class Set_Interface 
 {
 
@@ -16,40 +17,62 @@ public class Set_Interface
 		 */
 		
 		Set<String> set=new HashSet<String>();
-		set.add("RC");
-		set.add("WD");
-		set.add("GRID");
 		set.add("Appium");
-		set.add("IDE");
-		set.add("WD");
+		set.add("WebDriver");
+		set.add("Grid");
+		set.add("RemoteControl");
 		set.add("Cucumber");
+		set.add("Katalon");
+		set.add("Grid");
 		
 		
-		//Get Size of objects..
-		int obj_size=set.size();
-		System.out.println("Number of object available is => "+obj_size);
+		//Get size of object count
+		int obj_count=set.size();
+		System.out.println("List of object available at set => "+obj_count);
 		
-		//Remove object using name
-		set.remove("Cucumber");
+		//Remove object from collection
+		set.remove("RemoteControl");
 		
-		//Verify object available
-		boolean flag=set.contains("IDE");
+		//Verify object contains at collection
+		boolean flag=set.contains("Cucumber");
 		System.out.println("Object Available status is => "+flag);
 		
-		
-		//Get Next Iterator with in  object..
-		String itr=set.iterator().next();
-		System.out.println("next iterator value is => "+itr);
-		
-		
-		
-		//Print all Object using foreach loop
-		for (String eachobject : set) 
+		//Get Next iteration value.
+		String Itr=set.iterator().next();
+		System.out.println("Next iterator value is => "+Itr);
+
+		//Read all next iterator value using for each loop
+		for (String Eachtool : set)
 		{
-			System.out.println("=> "+eachobject);
+			System.out.println("=>"+Eachtool);
 		}
 		
-
+		
+		/*
+		 * Set:--> With TreeSet
+		 */
+		
+		Set<String> tset=new TreeSet<String>();
+		tset.add("Appium");
+		tset.add("WebDriver");
+		tset.add("Grid");
+		tset.add("RemoteControl");
+		tset.add("Cucumber");
+		tset.add("Katalon");
+		tset.add("Grid");
+		
+		
+		//Print all option using foreach loop
+		for (String Eachtool : tset) 
+		{
+			System.out.println("#=>"+Eachtool);
+		}
+		
+		
+		
+		
+		
+		
 	}
 
 }

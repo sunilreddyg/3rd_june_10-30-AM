@@ -1,9 +1,8 @@
 package corejava.Collections;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
-
-import javax.rmi.ssl.SslRMIClientSocketFactory;
 
 public class List_Interface {
 
@@ -31,9 +30,10 @@ public class List_Interface {
 		System.out.println("Object count is => "+object_count);
 		
 		
-		//Get any single obejct using GET Method.
-		String object=list.get(3);
-		System.out.println("3rd index object is => "+object);
+		//Get any single obejct using index number.
+		String single_object=list.get(3);
+		System.out.println("3rd index value is => "+single_object);
+		
 		
 		
 		//Print all object names using for loop..
@@ -51,6 +51,27 @@ public class List_Interface {
 			System.out.println("@@--> "+Eachobject);
 		}
 		
+		
+		
+		
+		/*
+		 * List:--> Linked List
+		 */
+		List<String> link_list=new LinkedList<>();
+		link_list.add("RC");
+		link_list.add("WD");
+		link_list.add("GRID");
+		link_list.add("Appium");
+		link_list.add("IDE");
+		link_list.add("WD");
+		link_list.add("Cucumber");
+		
+		
+		//print all values using foreach loop
+		for (String Eachlist : link_list) 
+		{
+			System.out.println("--> "+Eachlist);
+		}
 
 	}
 

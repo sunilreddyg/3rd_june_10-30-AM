@@ -11,17 +11,21 @@ public class HashTable_Interface
 		
 		/*
 		 *  Hash accept objects to store using key and value
+		 *  It only accept pair values to store..
+		 *  	=> Hashset is a sorted list of set.
 		 */
 		
 		
 		Hashtable<Integer, String> h = new Hashtable<Integer, String>();
-        h.put(1, "arjun");
-        h.put(2, "varun");
-        h.put(3, "kiran");
+		h.put(1, "Akash");
+		h.put(2, "Arun");
+		h.put(3, "sudheer");
+		
+		
         
         		/*
         		 * => 1 is  Key
-        		 * => arjun is a value
+        		 * => Akash is a value
         		 */
         
         String t=h.get(1);
@@ -32,15 +36,12 @@ public class HashTable_Interface
         
         
         //Get all keys
-       Set<Integer> keys= h.keySet();
-       for (Integer eachkey : keys) 
-       {
-    	   	String Value=h.get(eachkey);
-    	   	System.out.println("=> "+Value);
-	   }
-        
-     
-       
+        Set<Integer> set=h.keySet();
+        for (Integer eachKey : set) 
+        {
+        	String value=h.get(eachKey);
+        	System.out.println("=> "+value);
+        }
        
        
        
