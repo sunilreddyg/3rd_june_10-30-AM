@@ -43,9 +43,6 @@ public class Read_Data_From_Multiple_Rows {
 		driver.manage().window().maximize();
 		
 		
-		
-		
-		
 		//Iterate for number of rows
 		for (int i = 5; i <= Lrnum; i++) 
 		{
