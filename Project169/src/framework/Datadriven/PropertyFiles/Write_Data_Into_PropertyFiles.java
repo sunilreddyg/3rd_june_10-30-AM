@@ -9,7 +9,7 @@ public class Write_Data_Into_PropertyFiles
 
 	public static void main(String[] args) throws IOException 
 	{
-		
+
 		//Create object for property files
 		Properties repository=new Properties();
 		
