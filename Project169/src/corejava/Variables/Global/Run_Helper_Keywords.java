@@ -1,6 +1,7 @@
 package corejava.Variables.Global;
 
-public class Run_Helper_Keywords {
+public class Run_Helper_Keywords 
+{
 
 	public static void main(String[] args) 
 	{
@@ -24,9 +25,7 @@ public class Run_Helper_Keywords {
 		//Close Browser window
 		obj.driver.close();
 		
-		
-		
-		
+	
 	}
 
 }
