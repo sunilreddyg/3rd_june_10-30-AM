@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Suite accept set of tests -->
+<suite name="default">
+
+		<!-- Test accept group of classes execution -->
+		<test name="default-test" verbose="2">
+			     <classes>
+			     		<class name="framework_testng.TestSuite.Class3"></class>
+			     		<class name="framework_testng.TestSuite.Class2"></class>
+			     		<class name="framework_testng.TestSuite.Class1"></class>
+			     </classes>
+		</test>
+		
+</suite>

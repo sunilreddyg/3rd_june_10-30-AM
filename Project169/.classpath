@@ -29,5 +29,7 @@
 	<classpathentry kind="lib" path="D:/sunill/3rd_June_10-30_AM_2019/selenium-libraries/extentreports-2.41.2.jar"/>
 	<classpathentry kind="lib" path="D:/sunill/3rd_June_10-30_AM_2019/selenium-libraries/freemarker-2.3.23.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="D:/sunill/3rd_June_10-30_AM_2019/selenium-libraries/testng-6.11.jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

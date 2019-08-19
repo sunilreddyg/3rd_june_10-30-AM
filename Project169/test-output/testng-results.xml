@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="6" passed="4">
+  <reporter-output>
+    <line>
+      <![CDATA[tcoo1 executed]]>
+    </line>
+    <line>
+      <![CDATA[tcoo2 executed]]>
+    </line>
+    <line>
+      <![CDATA[tcoo5 executed]]>
+    </line>
+    <line>
+      <![CDATA[tcoo6 executed]]>
+    </line>
+  </reporter-output>
+  <suite name="default-suite" duration-ms="56" started-at="2019-08-19T07:29:48Z" finished-at="2019-08-19T07:29:49Z">
+    <groups>
+    </groups>
+    <test name="test1" duration-ms="56" started-at="2019-08-19T07:29:48Z" finished-at="2019-08-19T07:29:49Z">
+      <class name="framework_testng.TestSuite.Class1">
+        <test-method status="PASS" signature="tc001()[pri:0, instance:framework_testng.TestSuite.Class1@1888ff2c]" name="tc001" duration-ms="19" started-at="2019-08-19T12:59:48Z" finished-at="2019-08-19T12:59:49Z">
+          <reporter-output>
+            <line>
+              <![CDATA[tcoo1 executed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc001 -->
+        <test-method status="PASS" signature="tc002()[pri:0, instance:framework_testng.TestSuite.Class1@1888ff2c]" name="tc002" duration-ms="1" started-at="2019-08-19T12:59:49Z" finished-at="2019-08-19T12:59:49Z">
+          <reporter-output>
+            <line>
+              <![CDATA[tcoo2 executed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc002 -->
+      </class> <!-- framework_testng.TestSuite.Class1 -->
+      <class name="framework_testng.TestSuite.Class2">
+        <test-method status="PASS" signature="tc005()[pri:0, instance:framework_testng.TestSuite.Class2@6adca536]" name="tc005" duration-ms="1" started-at="2019-08-19T12:59:49Z" finished-at="2019-08-19T12:59:49Z">
+          <reporter-output>
+            <line>
+              <![CDATA[tcoo5 executed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc005 -->
+        <test-method status="PASS" signature="tc006()[pri:0, instance:framework_testng.TestSuite.Class2@6adca536]" name="tc006" duration-ms="6" started-at="2019-08-19T12:59:49Z" finished-at="2019-08-19T12:59:49Z">
+          <reporter-output>
+            <line>
+              <![CDATA[tcoo6 executed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc006 -->
+      </class> <!-- framework_testng.TestSuite.Class2 -->
+    </test> <!-- test1 -->
+  </suite> <!-- default-suite -->
+</testng-results>
