@@ -3,7 +3,7 @@
 <suite name="default-suite">
 		<test name="test1" verbose="2">
 				<classes>
-						
+
 						<class name="framework_testng.TestSuite.Class1">
 								<methods>
 										<include name="tc001"></include>

@@ -233,10 +233,10 @@ Run Suite File:--->
 
 ================How to Assign groups to TestNg  test=========
 
-@Test(groups="groupname")                     ==> Test assigning to single groups
+@Test(groups="groupname")             ==> Test assigning to single groups
 
 
-@Test(groups={"group1","group2"})             ==> Test assigning to multiple groups
+@Test(groups={"group1","group2"})     ==> Test assigning to multiple groups
 
 ================Test Suite to run Groups --->
 

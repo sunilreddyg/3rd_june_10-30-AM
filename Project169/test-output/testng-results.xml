@@ -1,55 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="6" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
-    <line>
-      <![CDATA[tcoo1 executed]]>
-    </line>
-    <line>
-      <![CDATA[tcoo2 executed]]>
-    </line>
-    <line>
-      <![CDATA[tcoo5 executed]]>
-    </line>
-    <line>
-      <![CDATA[tcoo6 executed]]>
-    </line>
   </reporter-output>
-  <suite name="default-suite" duration-ms="56" started-at="2019-08-19T07:29:48Z" finished-at="2019-08-19T07:29:49Z">
+  <suite name="deafult" duration-ms="37954" started-at="2019-08-20T07:52:50Z" finished-at="2019-08-20T07:53:28Z">
     <groups>
     </groups>
-    <test name="test1" duration-ms="56" started-at="2019-08-19T07:29:48Z" finished-at="2019-08-19T07:29:49Z">
-      <class name="framework_testng.TestSuite.Class1">
-        <test-method status="PASS" signature="tc001()[pri:0, instance:framework_testng.TestSuite.Class1@1888ff2c]" name="tc001" duration-ms="19" started-at="2019-08-19T12:59:48Z" finished-at="2019-08-19T12:59:49Z">
+    <test name="test1" duration-ms="32403" started-at="2019-08-20T07:52:50Z" finished-at="2019-08-20T07:53:23Z">
+      <class name="framework_testng.CrossBrowser.CrossBrowser_Test">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:framework_testng.CrossBrowser.CrossBrowser_Test@2a18f23c]" name="launchBrowser" duration-ms="3686" started-at="2019-08-20T13:22:50Z" finished-at="2019-08-20T13:22:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
-            <line>
-              <![CDATA[tcoo1 executed]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- tc001 -->
-        <test-method status="PASS" signature="tc002()[pri:0, instance:framework_testng.TestSuite.Class1@1888ff2c]" name="tc002" duration-ms="1" started-at="2019-08-19T12:59:49Z" finished-at="2019-08-19T12:59:49Z">
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="loadApp(java.lang.String)[pri:1, instance:framework_testng.CrossBrowser.CrossBrowser_Test@2a18f23c]" name="loadApp" duration-ms="13393" started-at="2019-08-20T13:22:54Z" finished-at="2019-08-20T13:23:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://cleartrip.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
-            <line>
-              <![CDATA[tcoo2 executed]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- tc002 -->
-      </class> <!-- framework_testng.TestSuite.Class1 -->
-      <class name="framework_testng.TestSuite.Class2">
-        <test-method status="PASS" signature="tc005()[pri:0, instance:framework_testng.TestSuite.Class2@6adca536]" name="tc005" duration-ms="1" started-at="2019-08-19T12:59:49Z" finished-at="2019-08-19T12:59:49Z">
+        </test-method> <!-- loadApp -->
+        <test-method status="PASS" signature="flight_search()[pri:2, instance:framework_testng.CrossBrowser.CrossBrowser_Test@2a18f23c]" name="flight_search" duration-ms="9965" started-at="2019-08-20T13:23:07Z" finished-at="2019-08-20T13:23:17Z">
           <reporter-output>
-            <line>
-              <![CDATA[tcoo5 executed]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- tc005 -->
-        <test-method status="PASS" signature="tc006()[pri:0, instance:framework_testng.TestSuite.Class2@6adca536]" name="tc006" duration-ms="6" started-at="2019-08-19T12:59:49Z" finished-at="2019-08-19T12:59:49Z">
+        </test-method> <!-- flight_search -->
+        <test-method status="PASS" signature="closeBrowser()[pri:3, instance:framework_testng.CrossBrowser.CrossBrowser_Test@2a18f23c]" name="closeBrowser" duration-ms="5336" started-at="2019-08-20T13:23:17Z" finished-at="2019-08-20T13:23:23Z">
           <reporter-output>
-            <line>
-              <![CDATA[tcoo6 executed]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- tc006 -->
-      </class> <!-- framework_testng.TestSuite.Class2 -->
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- framework_testng.CrossBrowser.CrossBrowser_Test -->
     </test> <!-- test1 -->
-  </suite> <!-- default-suite -->
+    <test name="test2" duration-ms="37898" started-at="2019-08-20T07:52:50Z" finished-at="2019-08-20T07:53:28Z">
+      <class name="framework_testng.CrossBrowser.CrossBrowser_Test">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:framework_testng.CrossBrowser.CrossBrowser_Test@1134affc]" name="launchBrowser" duration-ms="9124" started-at="2019-08-20T13:22:50Z" finished-at="2019-08-20T13:22:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="loadApp(java.lang.String)[pri:1, instance:framework_testng.CrossBrowser.CrossBrowser_Test@1134affc]" name="loadApp" duration-ms="6828" started-at="2019-08-20T13:22:59Z" finished-at="2019-08-20T13:23:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://cleartrip.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadApp -->
+        <test-method status="PASS" signature="flight_search()[pri:2, instance:framework_testng.CrossBrowser.CrossBrowser_Test@1134affc]" name="flight_search" duration-ms="13164" started-at="2019-08-20T13:23:06Z" finished-at="2019-08-20T13:23:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flight_search -->
+        <test-method status="PASS" signature="closeBrowser()[pri:3, instance:framework_testng.CrossBrowser.CrossBrowser_Test@1134affc]" name="closeBrowser" duration-ms="8772" started-at="2019-08-20T13:23:19Z" finished-at="2019-08-20T13:23:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- framework_testng.CrossBrowser.CrossBrowser_Test -->
+    </test> <!-- test2 -->
+  </suite> <!-- deafult -->
 </testng-results>
