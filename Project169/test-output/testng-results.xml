@@ -1,77 +1,246 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+<testng-results skipped="2" failed="1" ignored="0" total="8" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="deafult" duration-ms="37954" started-at="2019-08-20T07:52:50Z" finished-at="2019-08-20T07:53:28Z">
+  <suite name="default" duration-ms="95" started-at="2019-08-22T08:19:15Z" finished-at="2019-08-22T08:19:16Z">
     <groups>
     </groups>
-    <test name="test1" duration-ms="32403" started-at="2019-08-20T07:52:50Z" finished-at="2019-08-20T07:53:23Z">
-      <class name="framework_testng.CrossBrowser.CrossBrowser_Test">
-        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:framework_testng.CrossBrowser.CrossBrowser_Test@2a18f23c]" name="launchBrowser" duration-ms="3686" started-at="2019-08-20T13:22:50Z" finished-at="2019-08-20T13:22:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test name="test1" duration-ms="95" started-at="2019-08-22T08:19:15Z" finished-at="2019-08-22T08:19:16Z">
+      <class name="framework_testng.Test_listners.MyTest">
+        <test-method status="PASS" signature="tc001()[pri:0, instance:framework_testng.Test_listners.MyTest@2aaf7cc2]" name="tc001" duration-ms="36" started-at="2019-08-22T13:49:15Z" finished-at="2019-08-22T13:49:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="loadApp(java.lang.String)[pri:1, instance:framework_testng.CrossBrowser.CrossBrowser_Test@2a18f23c]" name="loadApp" duration-ms="13393" started-at="2019-08-20T13:22:54Z" finished-at="2019-08-20T13:23:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://cleartrip.com]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- tc001 -->
+        <test-method status="FAIL" signature="tc002()[pri:0, instance:framework_testng.Test_listners.MyTest@2aaf7cc2]" name="tc002" duration-ms="2" started-at="2019-08-22T13:49:16Z" finished-at="2019-08-22T13:49:16Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [google] but found [gmail]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [google] but found [gmail]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at framework_testng.Test_listners.MyTest.tc002(MyTest.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loadApp -->
-        <test-method status="PASS" signature="flight_search()[pri:2, instance:framework_testng.CrossBrowser.CrossBrowser_Test@2a18f23c]" name="flight_search" duration-ms="9965" started-at="2019-08-20T13:23:07Z" finished-at="2019-08-20T13:23:17Z">
+        </test-method> <!-- tc002 -->
+        <test-method status="SKIP" signature="tc003()[pri:0, instance:framework_testng.Test_listners.MyTest@2aaf7cc2]" name="tc003" duration-ms="1" started-at="2019-08-22T13:49:16Z" finished-at="2019-08-22T13:49:16Z">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[I Skipped]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: I Skipped
+	at framework_testng.Test_listners.MyTest.tc003(MyTest.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- flight_search -->
-        <test-method status="PASS" signature="closeBrowser()[pri:3, instance:framework_testng.CrossBrowser.CrossBrowser_Test@2a18f23c]" name="closeBrowser" duration-ms="5336" started-at="2019-08-20T13:23:17Z" finished-at="2019-08-20T13:23:23Z">
+        </test-method> <!-- tc003 -->
+        <test-method status="PASS" signature="tc004()[pri:0, instance:framework_testng.Test_listners.MyTest@2aaf7cc2]" name="tc004" duration-ms="0" started-at="2019-08-22T13:49:16Z" finished-at="2019-08-22T13:49:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- framework_testng.CrossBrowser.CrossBrowser_Test -->
+        </test-method> <!-- tc004 -->
+        <test-method status="SKIP" signature="tc005()[pri:0, instance:framework_testng.Test_listners.MyTest@2aaf7cc2]" name="tc005" duration-ms="1" started-at="2019-08-22T13:49:16Z" finished-at="2019-08-22T13:49:16Z">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[I Skipped]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: I Skipped
+	at framework_testng.Test_listners.MyTest.tc005(MyTest.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc005 -->
+        <test-method status="PASS" signature="tc006()[pri:0, instance:framework_testng.Test_listners.MyTest@2aaf7cc2]" name="tc006" duration-ms="0" started-at="2019-08-22T13:49:16Z" finished-at="2019-08-22T13:49:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc006 -->
+        <test-method status="SUCCESS_PERCENTAGE_FAILURE" signature="tc006()[pri:0, instance:framework_testng.Test_listners.MyTest@2aaf7cc2]" name="tc006" duration-ms="0" started-at="2019-08-22T13:49:16Z" finished-at="2019-08-22T13:49:16Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [wd] but found [wd1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [wd] but found [wd1]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at framework_testng.Test_listners.MyTest.tc006(MyTest.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc006 -->
+        <test-method status="PASS" signature="tc006()[pri:0, instance:framework_testng.Test_listners.MyTest@2aaf7cc2]" name="tc006" duration-ms="1" started-at="2019-08-22T13:49:16Z" finished-at="2019-08-22T13:49:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc006 -->
+        <test-method status="SUCCESS_PERCENTAGE_FAILURE" signature="tc006()[pri:0, instance:framework_testng.Test_listners.MyTest@2aaf7cc2]" name="tc006" duration-ms="0" started-at="2019-08-22T13:49:16Z" finished-at="2019-08-22T13:49:16Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [wd] but found [wd1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [wd] but found [wd1]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at framework_testng.Test_listners.MyTest.tc006(MyTest.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc006 -->
+        <test-method status="PASS" signature="tc006()[pri:0, instance:framework_testng.Test_listners.MyTest@2aaf7cc2]" name="tc006" duration-ms="1" started-at="2019-08-22T13:49:16Z" finished-at="2019-08-22T13:49:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc006 -->
+      </class> <!-- framework_testng.Test_listners.MyTest -->
     </test> <!-- test1 -->
-    <test name="test2" duration-ms="37898" started-at="2019-08-20T07:52:50Z" finished-at="2019-08-20T07:53:28Z">
-      <class name="framework_testng.CrossBrowser.CrossBrowser_Test">
-        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:framework_testng.CrossBrowser.CrossBrowser_Test@1134affc]" name="launchBrowser" duration-ms="9124" started-at="2019-08-20T13:22:50Z" finished-at="2019-08-20T13:22:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="loadApp(java.lang.String)[pri:1, instance:framework_testng.CrossBrowser.CrossBrowser_Test@1134affc]" name="loadApp" duration-ms="6828" started-at="2019-08-20T13:22:59Z" finished-at="2019-08-20T13:23:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://cleartrip.com]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loadApp -->
-        <test-method status="PASS" signature="flight_search()[pri:2, instance:framework_testng.CrossBrowser.CrossBrowser_Test@1134affc]" name="flight_search" duration-ms="13164" started-at="2019-08-20T13:23:06Z" finished-at="2019-08-20T13:23:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flight_search -->
-        <test-method status="PASS" signature="closeBrowser()[pri:3, instance:framework_testng.CrossBrowser.CrossBrowser_Test@1134affc]" name="closeBrowser" duration-ms="8772" started-at="2019-08-20T13:23:19Z" finished-at="2019-08-20T13:23:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- framework_testng.CrossBrowser.CrossBrowser_Test -->
-    </test> <!-- test2 -->
-  </suite> <!-- deafult -->
+  </suite> <!-- default -->
 </testng-results>

@@ -388,7 +388,7 @@ How to retrievedata from different class..
 @Test(dataProvider="methodname", dataProviderClass = classname.class)
 public void (String var,String var)
 {
-
+	//Data provider method should declare with static access specifier..
 }
 
 ===============================================================>
@@ -404,8 +404,8 @@ Test Listeners:-->
     	IHookable 
     	IInvokedMethodListener 
     	IMethodInterceptor 
-    	IReporter 
     	ISuiteListener 
+    	IReporter 
     	ITestListener     --->Testers use test listeners...
 
 	--------Events to listen under ItestListeners------

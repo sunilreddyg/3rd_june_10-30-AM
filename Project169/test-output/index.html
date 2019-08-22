@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-deafult">
-              <span class="suite-name border-passed">deafult</span>
+            <a href="#" class="navigator-link" panel-name="suite-default">
+              <span class="suite-name border-failed">default</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-deafult">
-                    <span>C:\Users\Administrator\git\3rd_june_10-30-AM\Project169\src\framework_testng\CrossBrowser\CrossBrowser_SuiteFile.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-default">
+                    <span>C:\Users\Administrator\git\3rd_june_10-30-AM\Project169\src\framework_testng\Test_listners\Run_listeners.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-deafult">
-                    <span class="test-stats">2 tests</span>
+                  <a href="#" class="navigator-link " panel-name="testlist-default">
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-deafult">
+                  <a href="#" class="navigator-link " panel-name="group-default">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-deafult">
+                  <a href="#" class="navigator-link " panel-name="times-default">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-deafult">
+                  <a href="#" class="navigator-link " panel-name="reporter-default">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-deafult">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-default">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-deafult">
+                  <a href="#" class="navigator-link " panel-name="chronological-default">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,56 +91,74 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,  2 skipped,  5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-default" class="hide-methods failed suite-default"> (hide)</a> <!-- hide-methods failed suite-default -->
+                      <a href="#" panel-name="suite-default" class="show-methods failed suite-default"> (show)</a> <!-- show-methods failed suite-default -->
+                    </span>
+                    <div class="method-list-content failed suite-default">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-default" title="framework_testng.Test_listners.MyTest" hash-for-method="tc002">tc002</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-default -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-default" class="hide-methods skipped suite-default"> (hide)</a> <!-- hide-methods skipped suite-default -->
+                      <a href="#" panel-name="suite-default" class="show-methods skipped suite-default"> (show)</a> <!-- show-methods skipped suite-default -->
+                    </span>
+                    <div class="method-list-content skipped suite-default">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-default" title="framework_testng.Test_listners.MyTest" hash-for-method="tc003">tc003</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-default" title="framework_testng.Test_listners.MyTest" hash-for-method="tc005">tc005</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-default -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-deafult" class="hide-methods passed suite-deafult"> (hide)</a> <!-- hide-methods passed suite-deafult -->
-                      <a href="#" panel-name="suite-deafult" class="show-methods passed suite-deafult"> (show)</a> <!-- show-methods passed suite-deafult -->
+                      <a href="#" panel-name="suite-default" class="hide-methods passed suite-default"> (hide)</a> <!-- hide-methods passed suite-default -->
+                      <a href="#" panel-name="suite-default" class="show-methods passed suite-default"> (show)</a> <!-- show-methods passed suite-default -->
                     </span>
-                    <div class="method-list-content passed suite-deafult">
+                    <div class="method-list-content passed suite-default">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-deafult" title="framework_testng.CrossBrowser.CrossBrowser_Test" hash-for-method="closeBrowser">closeBrowser</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-default" title="framework_testng.Test_listners.MyTest" hash-for-method="tc001">tc001</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-deafult" title="framework_testng.CrossBrowser.CrossBrowser_Test" hash-for-method="closeBrowser">closeBrowser</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-default" title="framework_testng.Test_listners.MyTest" hash-for-method="tc004">tc004</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-deafult" title="framework_testng.CrossBrowser.CrossBrowser_Test" hash-for-method="flight_search">flight_search</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-default" title="framework_testng.Test_listners.MyTest" hash-for-method="tc006">tc006</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-deafult" title="framework_testng.CrossBrowser.CrossBrowser_Test" hash-for-method="flight_search">flight_search</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-default" title="framework_testng.Test_listners.MyTest" hash-for-method="tc006">tc006</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-deafult" title="framework_testng.CrossBrowser.CrossBrowser_Test" hash-for-method="launchBrowser(chrome)">launchBrowser(chrome)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-default" title="framework_testng.Test_listners.MyTest" hash-for-method="tc006">tc006</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-deafult" title="framework_testng.CrossBrowser.CrossBrowser_Test" hash-for-method="launchBrowser(firefox)">launchBrowser(firefox)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-deafult" title="framework_testng.CrossBrowser.CrossBrowser_Test" hash-for-method="loadApp(http://cleartrip.com)">loadApp(http://cleartrip.com)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-deafult" title="framework_testng.CrossBrowser.CrossBrowser_Test" hash-for-method="loadApp(http://cleartrip.com)">loadApp(http://cleartrip.com)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-deafult -->
+                    </div> <!-- method-list-content passed suite-default -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -151,135 +169,149 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-deafult" class="panel deafult">
-          <div class="suite-deafult-class-passed">
+        <div panel-name="suite-default" class="panel default">
+          <div class="suite-default-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">framework_testng.CrossBrowser.CrossBrowser_Test</span>
+              <img src="failed.png"/>
+              <span class="class-name">framework_testng.Test_listners.MyTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="closeBrowser">
-                  </a> <!-- closeBrowser -->
-                  <span class="method-name">closeBrowser</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="closeBrowser">
-                  </a> <!-- closeBrowser -->
-                  <span class="method-name">closeBrowser</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="flight_search">
-                  </a> <!-- flight_search -->
-                  <span class="method-name">flight_search</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="flight_search">
-                  </a> <!-- flight_search -->
-                  <span class="method-name">flight_search</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="launchBrowser(chrome)">
-                  </a> <!-- launchBrowser(chrome) -->
-                  <span class="method-name">launchBrowser</span>
-                  <span class="parameters">(chrome)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="launchBrowser(firefox)">
-                  </a> <!-- launchBrowser(firefox) -->
-                  <span class="method-name">launchBrowser</span>
-                  <span class="parameters">(firefox)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loadApp(http://cleartrip.com)">
-                  </a> <!-- loadApp(http://cleartrip.com) -->
-                  <span class="method-name">loadApp</span>
-                  <span class="parameters">(http://cleartrip.com)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loadApp(http://cleartrip.com)">
-                  </a> <!-- loadApp(http://cleartrip.com) -->
-                  <span class="method-name">loadApp</span>
-                  <span class="parameters">(http://cleartrip.com)</span>
+                  <a name="tc002">
+                  </a> <!-- tc002 -->
+                  <span class="method-name">tc002</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [google] but found [gmail]
+	at framework_testng.Test_listners.MyTest.tc002(MyTest.java:18)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-deafult-class-passed -->
-        </div> <!-- panel deafult -->
-        <div panel-name="test-xml-deafult" class="panel">
+          </div> <!-- suite-default-class-failed -->
+          <div class="suite-default-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">framework_testng.Test_listners.MyTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc003">
+                  </a> <!-- tc003 -->
+                  <span class="method-name">tc003</span>
+                  <div class="stack-trace">org.testng.SkipException: I Skipped
+	at framework_testng.Test_listners.MyTest.tc003(MyTest.java:24)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc005">
+                  </a> <!-- tc005 -->
+                  <span class="method-name">tc005</span>
+                  <div class="stack-trace">org.testng.SkipException: I Skipped
+	at framework_testng.Test_listners.MyTest.tc005(MyTest.java:36)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-default-class-skipped -->
+          <div class="suite-default-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">framework_testng.Test_listners.MyTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc001">
+                  </a> <!-- tc001 -->
+                  <span class="method-name">tc001</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc004">
+                  </a> <!-- tc004 -->
+                  <span class="method-name">tc004</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc006">
+                  </a> <!-- tc006 -->
+                  <span class="method-name">tc006</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc006">
+                  </a> <!-- tc006 -->
+                  <span class="method-name">tc006</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc006">
+                  </a> <!-- tc006 -->
+                  <span class="method-name">tc006</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-default-class-passed -->
+        </div> <!-- panel default -->
+        <div panel-name="test-xml-default" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Administrator\git\3rd_june_10-30-AM\Project169\src\framework_testng\CrossBrowser\CrossBrowser_SuiteFile.xml</span>
+            <span class="header-content">C:\Users\Administrator\git\3rd_june_10-30-AM\Project169\src\framework_testng\Test_listners\Run_listeners.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;deafult&quot; parallel=&quot;tests&quot;&gt;
-  &lt;parameter name=&quot;appurl&quot; value=&quot;http://cleartrip.com&quot;/&gt;
-  &lt;test verbose=&quot;2&quot; name=&quot;test1&quot;&gt;
+&lt;suite name=&quot;default&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;framework_testng.Test_listners.Run_Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;test1&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;framework_testng.CrossBrowser.CrossBrowser_Test&quot;&gt;
-        &lt;parameter name=&quot;browsername&quot; value=&quot;chrome&quot;/&gt;
-      &lt;/class&gt; &lt;!-- framework_testng.CrossBrowser.CrossBrowser_Test --&gt;
+      &lt;class name=&quot;framework_testng.Test_listners.MyTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- test1 --&gt;
-  &lt;test verbose=&quot;2&quot; name=&quot;test2&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;framework_testng.CrossBrowser.CrossBrowser_Test&quot;&gt;
-        &lt;parameter name=&quot;browsername&quot; value=&quot;firefox&quot;/&gt;
-      &lt;/class&gt; &lt;!-- framework_testng.CrossBrowser.CrossBrowser_Test --&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- test2 --&gt;
-&lt;/suite&gt; &lt;!-- deafult --&gt;
+&lt;/suite&gt; &lt;!-- default --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-deafult" class="panel">
+        <div panel-name="testlist-default" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for deafult</span>
+            <span class="header-content">Tests for default</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
                 <span class="test-name">test1 (1 class)</span>
               </li>
-              <li>
-                <span class="test-name">test2 (1 class)</span>
-              </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-deafult" class="panel">
+        <div panel-name="group-default" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for deafult</span>
+            <span class="header-content">Groups for default</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-deafult" class="panel">
+        <div panel-name="times-default" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for deafult</span>
+            <span class="header-content">Times for default</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_deafult');
-function tableData_deafult() {
+suiteTableInitFunctions.push('tableData_default');
+function tableData_default() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
@@ -287,99 +319,109 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loadApp')
-data.setCell(0, 2, 'framework_testng.CrossBrowser.CrossBrowser_Test')
-data.setCell(0, 3, 13393);
+data.setCell(0, 1, 'tc001')
+data.setCell(0, 2, 'framework_testng.Test_listners.MyTest')
+data.setCell(0, 3, 36);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'flight_search')
-data.setCell(1, 2, 'framework_testng.CrossBrowser.CrossBrowser_Test')
-data.setCell(1, 3, 13164);
+data.setCell(1, 1, 'tc002')
+data.setCell(1, 2, 'framework_testng.Test_listners.MyTest')
+data.setCell(1, 3, 2);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'flight_search')
-data.setCell(2, 2, 'framework_testng.CrossBrowser.CrossBrowser_Test')
-data.setCell(2, 3, 9965);
+data.setCell(2, 1, 'tc006')
+data.setCell(2, 2, 'framework_testng.Test_listners.MyTest')
+data.setCell(2, 3, 1);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'launchBrowser')
-data.setCell(3, 2, 'framework_testng.CrossBrowser.CrossBrowser_Test')
-data.setCell(3, 3, 9124);
+data.setCell(3, 1, 'tc006')
+data.setCell(3, 2, 'framework_testng.Test_listners.MyTest')
+data.setCell(3, 3, 1);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'closeBrowser')
-data.setCell(4, 2, 'framework_testng.CrossBrowser.CrossBrowser_Test')
-data.setCell(4, 3, 8772);
+data.setCell(4, 1, 'tc003')
+data.setCell(4, 2, 'framework_testng.Test_listners.MyTest')
+data.setCell(4, 3, 1);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'loadApp')
-data.setCell(5, 2, 'framework_testng.CrossBrowser.CrossBrowser_Test')
-data.setCell(5, 3, 6828);
+data.setCell(5, 1, 'tc005')
+data.setCell(5, 2, 'framework_testng.Test_listners.MyTest')
+data.setCell(5, 3, 1);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'closeBrowser')
-data.setCell(6, 2, 'framework_testng.CrossBrowser.CrossBrowser_Test')
-data.setCell(6, 3, 5336);
+data.setCell(6, 1, 'tc004')
+data.setCell(6, 2, 'framework_testng.Test_listners.MyTest')
+data.setCell(6, 3, 0);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'launchBrowser')
-data.setCell(7, 2, 'framework_testng.CrossBrowser.CrossBrowser_Test')
-data.setCell(7, 3, 3686);
-window.suiteTableData['deafult']= { tableData: data, tableDiv: 'times-div-deafult'}
+data.setCell(7, 1, 'tc006')
+data.setCell(7, 2, 'framework_testng.Test_listners.MyTest')
+data.setCell(7, 3, 0);
+window.suiteTableData['default']= { tableData: data, tableDiv: 'times-div-default'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
-              <div id="times-div-deafult">
-              </div> <!-- times-div-deafult -->
+              <span class="suite-total-time">Total running time: 42 ms</span>
+              <div id="times-div-default">
+              </div> <!-- times-div-default -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-deafult" class="panel">
+        <div panel-name="reporter-default" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for deafult</span>
+            <span class="header-content">Reporter output for default</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-deafult" class="panel">
+        <div panel-name="ignored-methods-default" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-deafult" class="panel">
+        <div panel-name="chronological-default" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">framework_testng.CrossBrowser.CrossBrowser_Test</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">framework_testng.Test_listners.MyTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">launchBrowser(chrome)</span>
+                <span class="method-name">tc001</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">launchBrowser(firefox)</span>
-                <span class="method-start">38 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tc002</span>
+                <span class="method-start">37 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">loadApp(http://cleartrip.com)</span>
-                <span class="method-start">3688 ms</span>
+                <span class="method-name">tc003</span>
+                <span class="method-start">42 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">loadApp(http://cleartrip.com)</span>
-                <span class="method-start">9166 ms</span>
+                <span class="method-name">tc004</span>
+                <span class="method-start">44 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">flight_search</span>
-                <span class="method-start">15996 ms</span>
+                <span class="method-name">tc005</span>
+                <span class="method-start">45 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">flight_search</span>
-                <span class="method-start">17081 ms</span>
+                <span class="method-name">tc006</span>
+                <span class="method-start">47 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">27047 ms</span>
+                <span class="method-name">tc006</span>
+                <span class="method-start">48 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">29161 ms</span>
+                <span class="method-name">tc006</span>
+                <span class="method-start">50 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc006</span>
+                <span class="method-start">52 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc006</span>
+                <span class="method-start">62 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

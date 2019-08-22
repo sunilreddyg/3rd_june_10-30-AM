@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [deafult]">
-  <parameter name="appurl" value="http://cleartrip.com"/>
-  <test name="test2(failed)">
+<suite name="Failed suite [default]">
+  <listeners>
+    <listener class-name="framework_testng.Test_listners.Run_Listeners"/>
+  </listeners>
+  <test name="test1(failed)">
     <classes>
-      <class name="framework_testng.CrossBrowser.CrossBrowser_Test">
-        <parameter name="browsername" value="firefox"/>
+      <class name="framework_testng.Test_listners.MyTest">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="flight_search"/>
-          <include name="loadApp" invocation-numbers="0"/>
+          <include name="tc002"/>
+          <include name="tc005"/>
+          <include name="tc003"/>
         </methods>
-      </class> <!-- framework_testng.CrossBrowser.CrossBrowser_Test -->
+      </class> <!-- framework_testng.Test_listners.MyTest -->
     </classes>
-  </test> <!-- test2(failed) -->
-</suite> <!-- Failed suite [deafult] -->
+  </test> <!-- test1(failed) -->
+</suite> <!-- Failed suite [default] -->
