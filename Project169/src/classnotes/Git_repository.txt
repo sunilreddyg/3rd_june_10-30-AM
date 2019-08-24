@@ -1,0 +1,59 @@
+Git Repository:===>
+
+You typically obtain a Git repository in one of two ways:
+
+		1.You can take a local directory that is currently not 
+		under version control, and turn it into a Git repository, or
+
+		2. You can clone an existing Git repository from elsewhere.
+		In either case, you end up with a Git repository on your local 
+		machine, ready for work.
+	
+
+Step1:-->   Create Account in  Git-Hub  [Free Account]
+		URL:-->  https://github.com/
+		Enter unqiue account details and finish registration.
+
+
+
+Step2:-->   Signin to git Account.
+		Ener username and password click on SignIn button
+
+Step3:-->   Create repository  
+
+		=> At home page click create repository button
+		=> Enter repository name
+		=> Click on Create repository..
+
+Step4:-->   Open Git perspective window
+
+		Eclipse --> Windows Menu  ---> Show view
+		---> click others  --> Open git folder
+		--> Select git repostiory and git staging
+Step 5:-->
+	 Click on clone Repository.
+	=> Enter repository name and click on finish.
+
+Step 6:-->
+
+	Open Existing project at eclipse
+	Right click on project ---> Select Team option ---> click share team
+	=> Select local Repository and click on finish.
+
+Step 7:-->
+	Open stagning perspective 
+	 and drag all unstaged files into stagging view.
+
+Step8:--> 
+	Write comment and click commit and Push...
+
+Step9:-->
+	Open git account and select repository.
+	watch latest updates under your  project..
+==============================================================
+	
+
+
+
+
+
